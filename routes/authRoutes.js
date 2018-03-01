@@ -17,9 +17,10 @@ module.exports = app => {
     app.get('/auth/facebook', passport.authenticate('facebook'));
 
     app.get('/auth/facebook/callback', 
-    passport.authenticate('facebook', (req,res) => {
+    passport.authenticate('facebook'), 
+    (req,res) => {
         res.redirect('/home');
-    }));
+    });
 
     app.get('/api/logout', (req,res) => {
         req.logout();
