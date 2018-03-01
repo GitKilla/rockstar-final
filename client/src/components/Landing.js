@@ -1,4 +1,5 @@
 import React from 'react';
+import SkinThumbnail from './SkinThumbnail';
 
 const Landing = () => {
     return (
