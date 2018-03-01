@@ -59,11 +59,12 @@ passport.use(new FacebookStrategy({
         const newUser = await new User({
             googleId: '',
             facebookId: profile.id,
-            email: profile.emails[0].value,
-            gender: profile.gender,
-            photo: profile.photos[0].value,
+            email:'',
+            gender: '',
+            photo: '',
             itemDNA: []
         }).save();
+        console.log(newUser);
         done(null,newUser);
     }
 ));
