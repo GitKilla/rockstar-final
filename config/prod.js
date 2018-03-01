@@ -3,5 +3,6 @@ module.exports =  {
     GoogleClientSecret: process.env.GoogleClientSecret,
     FacebookClientID: process.env.FacebookClientID,
     FacebookClientSecret: process.env.FacebookClientSecret,
-    cookieKey: process.env.cookieKey
+    cookieKey: process.env.cookieKey,
+    mongoURI: process.env.mongoURI
 }
